@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #413F57;
+  font-weight: 400;
+}
+
+.biglietto {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2em;
+  /* background-color: yellow; */
+  padding: 50px 20px;
+  position: absolute;
+  top: 35%;;
+  left: 49.3%;
+}
+
+#costo-biglietto {
+  padding: 10px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px #bfbfbf;
+  font-weight: 500;
+  color: #ff7a00;
+}
+
+.img-svg {
+  text-align: center;
+  position: relative;
+}
+
+#train {
+  animation: move 3s ease infinite;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes move {
+  /* 0% {
+    transform: rotate(1turn);
+  } */
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(325px);
+  }
+}
